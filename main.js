@@ -1,1 +1,0 @@
-console.log('THis is just only for test');
