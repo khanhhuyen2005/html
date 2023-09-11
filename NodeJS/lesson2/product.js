@@ -1,0 +1,5 @@
+const product = {
+    id: 1,
+    name: "iphone"
+}
+export default product

@@ -1,0 +1,27 @@
+{
+  "name": "huyen",
+  "version": "1.0.0",
+  "main": "lesson_es6.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lesson_es6.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanhhuyen2005/html.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khanhhuyen2005/html/issues"
+  },
+  "homepage": "https://github.com/khanhhuyen2005/html#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

@@ -1,0 +1,33 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h2>Login</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 offset-3">
+            <form action="/postLogin" method="post" style="border-radius: 10px; border: 2px solid #ddd; padding: 10px 20px; background-color: #f0f1f1;">
+
+                <div class="form-group mt-3">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" placeholder="Email" name="email">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                </div>
+                <div>
+                    <span>I dont have an account</span>
+                <a href="/signup">Go to signup</a>
+
+                </div>
+                <div>
+                    <p style="color: red;" class="text-error">{{errorMessage}}</p>
+                </div>
+                <button type="submit" class="mt-5 btn btn-success">Login</button>
+            </form>
+
+        </div>
+    </div>
+</div>

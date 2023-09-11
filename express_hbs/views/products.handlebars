@@ -1,0 +1,39 @@
+{{!-- <h2>Product list !! {{name}}</h2> --}}
+{{!-- <h1>{{products.name}}</h1> --}}
+{{!-- <h1>{{data.name}}</h1> --}}
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+
+            <table class="table table-bordered">
+    <thead>
+        <th>ProductID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th><a class="btn btn-success" href="/create-product">add new</a></th>
+    </thead>
+    <tbody>
+        
+            {{#each products}}
+            <tr>
+         
+                <td>{{id}}</td>
+                <td><a href="/products/{{id}}">{{ name }}</a></td>
+                <td>{{ price }}</td>
+                <td class="d-flex">
+                    <form action="/delete-product" method="post"><button name="productId" value="{{id}}" type="submit" class="btn btn-sm btn-danger">x</button>
+                    </form>
+                    <a href="/edit-product/{{id}}" class="mx-1 btn btn-info btn-sm">Edit</a>
+                </td>
+    
+            </tr>
+        {{/each}}
+
+   
+    </tbody>
+</table>
+
+
+        </div>
+    </div>
+</div>
